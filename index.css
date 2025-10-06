@@ -414,33 +414,35 @@ body {
 @media (max-width: 768px) {
     .sticker-container-left,
     .sticker-container-right {
-        width: 12%;
+        width: 50px;
+        position: fixed;
     }
 
-    /* Lado IZQUIERDO - más pegados al borde */
-    #sticker-1 { top: 180px; left: 1%; width: 35px; animation-delay: 0s; }
-    #sticker-2 { top: 500px; left: 2%; width: 32px; animation-delay: 0.5s; }
-    #sticker-3 { top: 850px; left: 0%; width: 35px; animation-delay: 0.3s; }
-    #sticker-4 { top: 1200px; left: 2%; width: 32px; animation-delay: 0.7s; }
-    #sticker-5 { top: 1600px; left: 1%; width: 35px; animation-delay: 0.2s; }
-    #sticker-6 { top: 2000px; left: 1%; width: 33px; animation-delay: 0.6s; }
-    #sticker-7 { top: 2400px; left: 0%; width: 32px; animation-delay: 0.4s; }
-    #sticker-8 { top: 2800px; left: 2%; width: 35px; animation-delay: 0.8s; }
-    #sticker-9 { top: 3200px; left: 1%; width: 32px; animation-delay: 0.5s; }
-    #sticker-10 { top: 3600px; left: 1%; width: 33px; animation-delay: 0.3s; }
+    /* Lado IZQUIERDO - fijos y visibles */
+    #sticker-1 { top: 15%; left: 2px; width: 28px; animation-delay: 0s; }
+    #sticker-2 { top: 25%; left: 3px; width: 26px; animation-delay: 0.5s; }
+    #sticker-3 { top: 35%; left: 1px; width: 28px; animation-delay: 0.3s; }
+    #sticker-4 { top: 45%; left: 3px; width: 26px; animation-delay: 0.7s; }
+    #sticker-5 { top: 55%; left: 2px; width: 28px; animation-delay: 0.2s; }
+    #sticker-6 { top: 65%; left: 2px; width: 27px; animation-delay: 0.6s; }
+    #sticker-7 { top: 75%; left: 1px; width: 26px; animation-delay: 0.4s; }
+    #sticker-8 { top: 85%; left: 3px; width: 28px; animation-delay: 0.8s; }
+    #sticker-9 { display: none; } /* Ocultar algunos para no saturar */
+    #sticker-10 { display: none; }
 
-    /* Lado DERECHO - más pegados al borde */
-    #sticker-11 { top: 350px; right: 1%; left: auto; width: 35px; animation-delay: 0.6s; }
-    #sticker-12 { top: 700px; right: 2%; left: auto; width: 32px; animation-delay: 0.4s; }
-    #sticker-13 { top: 1050px; right: 0%; left: auto; width: 35px; animation-delay: 0.8s; }
-    #sticker-14 { top: 1400px; right: 2%; left: auto; width: 32px; animation-delay: 0.5s; }
-    #sticker-15 { top: 1800px; right: 1%; left: auto; width: 35px; animation-delay: 0.7s; }
-    #sticker-16 { top: 2200px; right: 2%; left: auto; width: 33px; animation-delay: 0.3s; }
-    #sticker-17 { top: 2600px; right: 0%; left: auto; width: 32px; animation-delay: 0.9s; }
-    #sticker-18 { top: 3000px; right: 2%; left: auto; width: 35px; animation-delay: 0.4s; }
-    #sticker-19 { top: 3400px; right: 1%; left: auto; width: 32px; animation-delay: 0.6s; }
-    #sticker-20 { top: 3800px; right: 1%; left: auto; width: 33px; animation-delay: 0.5s; }
+    /* Lado DERECHO - fijos y visibles */
+    #sticker-11 { top: 20%; right: 2px; left: auto; width: 28px; animation-delay: 0.6s; }
+    #sticker-12 { top: 30%; right: 3px; left: auto; width: 26px; animation-delay: 0.4s; }
+    #sticker-13 { top: 40%; right: 1px; left: auto; width: 28px; animation-delay: 0.8s; }
+    #sticker-14 { top: 50%; right: 3px; left: auto; width: 26px; animation-delay: 0.5s; }
+    #sticker-15 { top: 60%; right: 2px; left: auto; width: 28px; animation-delay: 0.7s; }
+    #sticker-16 { top: 70%; right: 3px; left: auto; width: 27px; animation-delay: 0.3s; }
+    #sticker-17 { top: 80%; right: 1px; left: auto; width: 26px; animation-delay: 0.9s; }
+    #sticker-18 { top: 90%; right: 3px; left: auto; width: 28px; animation-delay: 0.4s; }
+    #sticker-19 { display: none; }
+    #sticker-20 { display: none; }
 }
+
 
 /* Posiciones para PANTALLAS GRANDES */
 @media (min-width: 769px) and (max-width: 1299px) {
@@ -528,170 +530,183 @@ body {
 
 /* Móviles (pantallas menores a 768px) */
 @media (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+
     .container {
         padding: 10px;
+        width: 100%;
+        max-width: 100%;
     }
 
     .header {
-        padding: 25px 15px;
-        margin-bottom: 25px;
+        padding: 20px 10px;
+        margin-bottom: 20px;
         border-radius: 15px;
     }
 
     .header h1 {
-        font-size: 1.8em;
-        margin-bottom: 15px;
+        font-size: 1.6em;
+        margin-bottom: 10px;
     }
 
     .header .subtitle {
-        font-size: 0.95em;
-        margin-bottom: 20px;
+        font-size: 0.9em;
+        margin-bottom: 15px;
     }
 
     /* Ajustar corazones flotantes */
     .floating-heart {
-        font-size: 1.5em;
+        font-size: 1.3em;
     }
 
     .story-section {
-        padding: 20px 15px;
-        margin-bottom: 20px;
-        border-radius: 15px;
+        padding: 15px 10px;
+        margin-bottom: 15px;
+        border-radius: 12px;
     }
 
     .story-section h2 {
-        font-size: 1.3em;
-        margin-bottom: 15px;
+        font-size: 1.2em;
+        margin-bottom: 12px;
     }
 
     .story-section h2:after {
-        width: 60px;
+        width: 50px;
         height: 2px;
     }
 
     .story-text {
-        font-size: 0.9em;
-        line-height: 1.6;
-        margin-bottom: 20px;
+        font-size: 0.85em;
+        line-height: 1.5;
+        margin-bottom: 15px;
     }
 
     /* Galería de fotos en 1 columna */
     .photo-gallery {
         grid-template-columns: 1fr;
-        gap: 15px;
-        margin-top: 20px;
+        gap: 12px;
+        margin-top: 15px;
     }
 
     /* Pares de fotos en 1 columna */
     .photo-pair {
         grid-template-columns: 1fr;
-        gap: 15px;
+        gap: 12px;
     }
 
     /* Títulos de crecimiento */
     .growth-year h3 {
-        font-size: 1.1em;
-        margin-bottom: 15px;
+        font-size: 1em;
+        margin-bottom: 12px;
     }
 
     .growth-gallery {
-        gap: 30px;
+        gap: 25px;
     }
 
     /* Mapa más pequeño */
     #memory-map {
-        height: 300px;
+        height: 280px;
         border-radius: 12px;
     }
 
     /* GIFs en columna */
     .gif-container {
         flex-direction: column;
-        gap: 15px;
-        margin-top: 20px;
+        gap: 12px;
+        margin-top: 15px;
     }
 
     .gif-image {
-        height: 350px;
+        height: 300px;
+        width: 100%;
     }
 
     /* Mensaje de amor */
     .love-message {
-        padding: 25px 20px;
-        border-radius: 20px;
-        margin-top: 30px;
+        padding: 20px 15px;
+        border-radius: 15px;
+        margin-top: 25px;
     }
 
     .love-message h2 {
-        font-size: 1.5em;
-        margin-bottom: 20px;
+        font-size: 1.4em;
+        margin-bottom: 15px;
     }
 
     .love-message p {
-        font-size: 0.95em;
-        line-height: 1.6;
+        font-size: 0.9em;
+        line-height: 1.5;
     }
 
     /* Botones */
     .upload-btn {
-        padding: 10px 25px;
-        font-size: 1em;
+        padding: 10px 20px;
+        font-size: 0.95em;
     }
 
     /* Reducir efectos hover en móvil */
     .photo-placeholder:hover {
-        transform: translateY(-5px);
+        transform: translateY(-3px);
     }
 
     /* Iconos más pequeños */
     .photo-placeholder .icon {
-        font-size: 2.5em;
+        font-size: 2.2em;
     }
 
     .photo-placeholder .text {
-        font-size: 0.9em;
+        font-size: 0.85em;
     }
 }
 
 /* Móviles pequeños (menos de 480px) */
 @media (max-width: 480px) {
     .header h1 {
-        font-size: 1.5em;
+        font-size: 1.4em;
     }
 
     .header .subtitle {
-        font-size: 0.85em;
+        font-size: 0.8em;
     }
 
     .story-section {
-        padding: 15px 12px;
+        padding: 12px 8px;
     }
 
     .story-section h2 {
-        font-size: 1.2em;
+        font-size: 1.1em;
     }
 
     .story-text {
-        font-size: 0.85em;
+        font-size: 0.8em;
     }
 
     .gif-image {
-        height: 280px;
-    }
-
-    #memory-map {
         height: 250px;
     }
 
+    #memory-map {
+        height: 220px;
+    }
+
     .love-message h2 {
-        font-size: 1.3em;
+        font-size: 1.2em;
     }
 
     .love-message p {
-        font-size: 0.9em;
+        font-size: 0.85em;
     }
 
     .floating-heart {
-        font-size: 1.2em;
+        font-size: 1.1em;
     }
+
+    /* Stickers aún más pequeños */
+    #sticker-1, #sticker-3, #sticker-5, #sticker-8 { width: 24px; }
+    #sticker-2, #sticker-4, #sticker-6, #sticker-7 { width: 22px; }
+    #sticker-11, #sticker-13, #sticker-15, #sticker-18 { width: 24px; }
+    #sticker-12, #sticker-14, #sticker-16, #sticker-17 { width: 22px; }
 }
