@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestra Historia 💕</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" type="image/png" href="">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+</head>
+<body>
+        <div class="sticker-container-left">
+            <!-- 👇 Reemplaza la imagen de abajo por tu sticker -->
+            <img src="images/stickers/RHEA-RIPLEY-Photoroom.png" alt="Sticker decorativo" class="sticker" id="sticker-1">
+            <img src="images/stickers/NEGAN-Photoroom.png" alt="Sticker decorativo" class="sticker" id="sticker-2">
+            <img src="images/stickers/ROMAN-REINGS-Photoroom.png" alt="Sticker decorativo" class="sticker" id="sticker-3">
+            <img src="images/stickers/STEPHANIE-VAQUER-Photoroom.png" alt="Sticker decorativo" class="sticker" id="sticker-4">
+            <img src="images/stickers/DARYL-DIXON-Photoroom.png" alt="Sticker decorativo" class="sticker" id="sticker-5">
+            <img src="images/stickers/PENTA-Photoroom.png" alt="Sticker decorativo" class="sticker" id="sticker-6">
+            <img src="images/stickers/RICK-GRIMES-Photoroom.png" alt="Sticker decorativo" class="sticker" id="sticker-7">
+            <img src="images/stickers/TIFFANY-STRATTON-Photoroom.png" alt="Sticker decorativo" class="sticker" id="sticker-8">
+            <img src="images/stickers/" alt="Sticker decorativo" class="sticker" id="sticker-9">
+            <img src="images/stickers/" alt="Sticker decorativo" class="sticker" id="sticker-10">
+        </div>
+
+        <div class="sticker-container-right">
+            <!-- 👇 Reemplaza la imagen de abajo por tu sticker -->
+            <img src="images/stickers/JOHN-CENA-Photoroom.png" alt="Sticker decorativo" class="sticker" id="sticker-11">
+            <img src="images/stickers/CARL-GRIMES-Photoroom.png" alt="Sticker decorativo" class="sticker" id="sticker-12">
+            <img src="images/stickers/CM-PUNK-Photoroom.png" alt="Sticker decorativo" class="sticker" id="sticker-13">
+            <img src="images/stickers/MAGGIE-GLENN-Photoroom.png" alt="Sticker decorativo" class="sticker" id="sticker-14">
+            <img src="images/stickers/JESUS-Photoroom.png" alt="Sticker decorativo" class="sticker" id="sticker-15">
+            <img src="images/stickers/RANDY-ORTON-Photoroom.png" alt="Sticker decorativo" class="sticker" id="sticker-16">
+            <img src="images/stickers/MICHONNE-Photoroom.png" alt="Sticker decorativo" class="sticker" id="sticker-17">
+            <img src="images/stickers/" alt="Sticker decorativo" class="sticker" id="sticker-18">
+            <img src="images/stickers/" alt="Sticker decorativo" class="sticker" id="sticker-19">
+            <img src="images/stickers/" alt="Sticker decorativo" class="sticker" id="sticker-20">
+        </div>
+
+    <div class="stars"></div>
+
+    <div class="container">
+        <div class="header">
+            <div class="floating-heart">💕</div>
+            <div class="floating-heart">💖</div>
+            <div class="floating-heart">💗</div>
+            <div class="floating-heart">💝</div>
+            <h1>Nuestra Historia</h1>
+            <p class="subtitle">Un viaje re falopa 💫</p>
+        </div>
+
+        <div class="story-section">
+            <h2>Cómo nos conocimos ✨</h2>
+            <p class="story-text">
+                nos conocimos por una persona en comun dudaba si tenias concha o no, pero despues de un tiempo me di cuenta que si y entonces te empece a hablar, hablamos una noche casi hasta amanecer y despues organizamos una salida, fuimos a las piedras y listo despues de eso no paramos de hablar y salir y aca estamos :) 
+            </p>
+            <div class="photo-gallery">
+                <div class="photo-placeholder">
+                    <img src="images/primera-foto.png" alt="Nuestra primera foto juntos">
+                </div>
+                <div class="photo-placeholder" onclick="playSong()">
+                    <div class="icon">🎵</div>
+                    <div class="text">Tocame Esta</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="story-section">
+            <h2>Mapa de Recuerdos 🗺️</h2>
+            <div id="memory-map"></div>
+        </div>
+
+        <div class="story-section">
+            <h2>Nuestra Historia en Fotos 📸</h2>
+            <p class="story-text">Viendo cómo crecimos y cambiamos.</p>
+
+            <div class="growth-gallery">
+                <div class="growth-year">
+                    <h3>Ella tan chikita y el tan chikito</h3>
+                    <div class="photo-pair">
+                        <div class="photo-placeholder">
+                            <img src="images/juli_pink.jpg" alt="Ella - Etapa 1">
+                        </div>
+                        <div class="photo-placeholder">
+                            <img src="images/yo_bebe.jpg" alt="Tú - Etapa 1">
+                        </div>
+                    </div>
+                </div>
+                <div class="growth-year">
+                    <h3>Ella tan linda y el tan facherito</h3>
+                    <div class="photo-pair">
+                        <div class="photo-placeholder">
+                            <img src="images/Juli_surprice.jpg" alt="Ella - Etapa 2">
+                        </div>
+                        <div class="photo-placeholder">
+                            <img src="images/yo_fecherito.jpg" alt="Tú - Etapa 2">
+                        </div>
+                    </div>
+                </div>
+                <div class="growth-year">
+                    <h3>Ella tan hermosa y el tan piola</h3>
+                    <div class="photo-pair">
+                        <div class="photo-placeholder">
+                            <img src="images/juli_en_agua.jpg" alt="Ella - Etapa 3">
+                        </div>
+                        <div class="photo-placeholder">
+                            <img src="images/yo_sentado.jpg" alt="Tú - Etapa 3">
+                        </div>
+                    </div>
+                </div>
+                <div class="growth-year">
+                    <h3>Ella tan bella y el tan falopa</h3>
+                    <div class="photo-pair">
+                        <div class="photo-placeholder">
+                            <img src="images/juli_pelocorto.webp" alt="Ella - Etapa 4">
+                        </div>
+                        <div class="photo-placeholder">
+                            <img src="images/yo_negan.jpg" alt="Tú - Etapa 4">
+                        </div>
+                    </div>
+                </div>
+                <div class="growth-year">
+                    <h3>Ella tan majestuosa y el tan quebrado</h3>
+                    <div class="photo-pair">
+                        <div class="photo-placeholder">
+                            <img src="images/juli_linda.jpg" alt="Ella - Etapa 5">
+                        </div>
+                        <div class="photo-placeholder">
+                            <img src="images/yo_fracturado.jpg" alt="Tú - Etapa 5">
+                        </div>
+                    </div>
+                </div>
+                <div class="growth-year">
+                    <h3>Ella tan perfecta y el tan fachero</h3>
+                    <div class="photo-pair">
+                        <div class="photo-placeholder">
+                            <img src="images/juli_mamasita.jpg" alt="Ella - Etapa 6">
+                        </div>
+                        <div class="photo-placeholder">
+                            <img src="images/yo_fachero.jpg" alt="Tú - Etapa 6">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="story-section">
+            <h2>Galería de recuerdos 📸</h2>
+            <p class="story-text">Nuestros momentos</p>
+            
+            <div class="gif-container">
+                <div class="gif-wrapper">
+                    <img src="images/besito.gif" alt="GIF animado" class="gif-image">
+                </div>
+
+                <!-- 👇 Reemplaza "images/besito.gif" en la línea de abajo con la ruta de tu nuevo GIF -->
+                <div class="gif-wrapper">
+                    <img src="images/besito.gif" alt="GIF animado" class="gif-image">
+                </div>
+            </div>
+            
+            <div class="photo-gallery">
+                <div class="photo-placeholder"><img src="images/mirando_arriba.jpg" alt="Recuerdo 1"></div>
+                <div class="photo-placeholder"><img src="images/felicidad.jpg" alt="Recuerdo 2"></div>
+                <div class="photo-placeholder"><img src="images/caballito.jpg" alt="Recuerdo 3"></div>
+                <div class="photo-placeholder"><img src="images/besito.jpg" alt="Recuerdo 4"></div>
+                <div class="photo-placeholder"><img src="images/besito_cachete.jpg" alt="Recuerdo 5"></div>
+                <div class="photo-placeholder"><img src="images/acostados.jpg" alt="Recuerdo 5"></div>
+                <div class="photo-placeholder"><img src="images/espejo.jpg" alt="Recuerdo 5"></div>
+                <div class="photo-placeholder"><img src="images/hermosos.jpg" alt="Recuerdo 5"></div>
+            </div>
+        </div>
+
+        <div class="love-message">
+            <h2>Para vos, mi amor 💖</h2>
+            <p>
+                Juli, cada boludez que hago o digo con vos es un momento re falopa pero cago de risa. Gracias por ser mi compañera ya hace un año. Ya se que no soy lo mas fachero del mundo pero vos me haces sentir el chabon  mas querido. Sos una persona re especial y me encanta compartir mi tiempo con vos. Espero que este regalo te guste. TE AMO :)
+            </p>
+        </div>
+    </div>
+
+    <audio id="my-song" src="audio/KATSEYE-Touch.mp3"></audio>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
