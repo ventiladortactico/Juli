@@ -43,10 +43,10 @@ body {
     padding: 20px;
 }
 
-/* En pantallas grandes donde hay stickers, reducir el ancho del contenedor */
+/* En pantallas grandes donde hay stickers, el contenedor es más ancho */
 @media (min-width: 1300px) {
     .container {
-        max-width: 700px; /* Más angosto para dejar espacio a los stickers */
+        max-width: 840px; /* Más ancho para el contenido principal */
     }
 }
 
