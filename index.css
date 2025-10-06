@@ -418,28 +418,28 @@ body {
     }
 
     /* Lado IZQUIERDO - más pegados al borde */
-    #sticker-1 { top: 250px; left: 2%; width: 40px; animation-delay: 0s; }
-    #sticker-2 { top: 700px; left: 3%; width: 35px; animation-delay: 0.5s; }
-    #sticker-3 { top: 1200px; left: 1%; width: 38px; animation-delay: 0.3s; }
-    #sticker-4 { top: 1700px; left: 3%; width: 35px; animation-delay: 0.7s; }
-    #sticker-5 { top: 2200px; left: 2%; width: 40px; animation-delay: 0.2s; }
-    #sticker-6 { top: 2700px; left: 2%; width: 38px; animation-delay: 0.6s; }
-    #sticker-7 { top: 3200px; left: 1%; width: 35px; animation-delay: 0.4s; }
-    #sticker-8 { top: 3700px; left: 3%; width: 40px; animation-delay: 0.8s; }
-    #sticker-9 { top: 4200px; left: 2%; width: 35px; animation-delay: 0.5s; }
-    #sticker-10 { top: 4700px; left: 2%; width: 38px; animation-delay: 0.3s; }
+    #sticker-1 { top: 180px; left: 1%; width: 35px; animation-delay: 0s; }
+    #sticker-2 { top: 500px; left: 2%; width: 32px; animation-delay: 0.5s; }
+    #sticker-3 { top: 850px; left: 0%; width: 35px; animation-delay: 0.3s; }
+    #sticker-4 { top: 1200px; left: 2%; width: 32px; animation-delay: 0.7s; }
+    #sticker-5 { top: 1600px; left: 1%; width: 35px; animation-delay: 0.2s; }
+    #sticker-6 { top: 2000px; left: 1%; width: 33px; animation-delay: 0.6s; }
+    #sticker-7 { top: 2400px; left: 0%; width: 32px; animation-delay: 0.4s; }
+    #sticker-8 { top: 2800px; left: 2%; width: 35px; animation-delay: 0.8s; }
+    #sticker-9 { top: 3200px; left: 1%; width: 32px; animation-delay: 0.5s; }
+    #sticker-10 { top: 3600px; left: 1%; width: 33px; animation-delay: 0.3s; }
 
     /* Lado DERECHO - más pegados al borde */
-    #sticker-11 { top: 450px; right: 2%; left: auto; width: 40px; animation-delay: 0.6s; }
-    #sticker-12 { top: 950px; right: 3%; left: auto; width: 35px; animation-delay: 0.4s; }
-    #sticker-13 { top: 1450px; right: 1%; left: auto; width: 38px; animation-delay: 0.8s; }
-    #sticker-14 { top: 1950px; right: 3%; left: auto; width: 35px; animation-delay: 0.5s; }
-    #sticker-15 { top: 2450px; right: 2%; left: auto; width: 40px; animation-delay: 0.7s; }
-    #sticker-16 { top: 2950px; right: 3%; left: auto; width: 38px; animation-delay: 0.3s; }
-    #sticker-17 { top: 3450px; right: 1%; left: auto; width: 35px; animation-delay: 0.9s; }
-    #sticker-18 { top: 3950px; right: 3%; left: auto; width: 40px; animation-delay: 0.4s; }
-    #sticker-19 { top: 4450px; right: 2%; left: auto; width: 35px; animation-delay: 0.6s; }
-    #sticker-20 { top: 4950px; right: 2%; left: auto; width: 38px; animation-delay: 0.5s; }
+    #sticker-11 { top: 350px; right: 1%; left: auto; width: 35px; animation-delay: 0.6s; }
+    #sticker-12 { top: 700px; right: 2%; left: auto; width: 32px; animation-delay: 0.4s; }
+    #sticker-13 { top: 1050px; right: 0%; left: auto; width: 35px; animation-delay: 0.8s; }
+    #sticker-14 { top: 1400px; right: 2%; left: auto; width: 32px; animation-delay: 0.5s; }
+    #sticker-15 { top: 1800px; right: 1%; left: auto; width: 35px; animation-delay: 0.7s; }
+    #sticker-16 { top: 2200px; right: 2%; left: auto; width: 33px; animation-delay: 0.3s; }
+    #sticker-17 { top: 2600px; right: 0%; left: auto; width: 32px; animation-delay: 0.9s; }
+    #sticker-18 { top: 3000px; right: 2%; left: auto; width: 35px; animation-delay: 0.4s; }
+    #sticker-19 { top: 3400px; right: 1%; left: auto; width: 32px; animation-delay: 0.6s; }
+    #sticker-20 { top: 3800px; right: 1%; left: auto; width: 33px; animation-delay: 0.5s; }
 }
 
 /* Posiciones para PANTALLAS GRANDES */
@@ -650,12 +650,6 @@ body {
 
     .photo-placeholder .text {
         font-size: 0.9em;
-    }
-
-    /* Ocultar stickers en móvil */
-    .sticker-container-left,
-    .sticker-container-right {
-        display: none;
     }
 }
 
