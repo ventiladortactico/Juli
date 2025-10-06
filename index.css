@@ -483,16 +483,16 @@ body {
     #sticker-9 { top: 4200px; left: 34%; width: 65px; animation-delay: 0.5s; }
     #sticker-10 { top: 4700px; left: 37%; width: 70px; animation-delay: 0.3s; }
 
-    #sticker-11 { top: 450px; left: 61%; width: 70px; animation-delay: 0.6s; }
-    #sticker-12 { top: 950px; left: 63%; width: 65px; animation-delay: 0.4s; }
-    #sticker-13 { top: 1450px; left: 59%; width: 70px; animation-delay: 0.8s; }
-    #sticker-14 { top: 1950px; left: 64%; width: 65px; animation-delay: 0.5s; }
-    #sticker-15 { top: 2450px; left: 61%; width: 75px; animation-delay: 0.7s; }
-    #sticker-16 { top: 2950px; left: 63%; width: 70px; animation-delay: 0.3s; }
-    #sticker-17 { top: 3450px; left: 60%; width: 65px; animation-delay: 0.9s; }
-    #sticker-18 { top: 3950px; left: 64%; width: 70px; animation-delay: 0.4s; }
-    #sticker-19 { top: 4450px; left: 61%; width: 65px; animation-delay: 0.6s; }
-    #sticker-20 { top: 4950px; left: 63%; width: 70px; animation-delay: 0.5s; }
+    #sticker-11 { top: 450px; right: 33%; left: auto; width: 70px; animation-delay: 0.6s; }
+    #sticker-12 { top: 950px; right: 38%; left: auto; width: 65px; animation-delay: 0.4s; }
+    #sticker-13 { top: 1450px; right: 31%; left: auto; width: 70px; animation-delay: 0.8s; }
+    #sticker-14 { top: 1950px; right: 39%; left: auto; width: 65px; animation-delay: 0.5s; }
+    #sticker-15 { top: 2450px; right: 33%; left: auto; width: 75px; animation-delay: 0.7s; }
+    #sticker-16 { top: 2950px; right: 36%; left: auto; width: 70px; animation-delay: 0.3s; }
+    #sticker-17 { top: 3450px; right: 32%; left: auto; width: 65px; animation-delay: 0.9s; }
+    #sticker-18 { top: 3950px; right: 38%; left: auto; width: 70px; animation-delay: 0.4s; }
+    #sticker-19 { top: 4450px; right: 34%; left: auto; width: 65px; animation-delay: 0.6s; }
+    #sticker-20 { top: 4950px; right: 37%; left: auto; width: 70px; animation-delay: 0.5s; }
 }
 
 /* ============================================ */
